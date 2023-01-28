@@ -1,5 +1,8 @@
-// El styles lo importamos aquí, ya se carga después al compilar todo
 import '../scss/styles.scss';
-import { sayHello } from './demo.js';
+import { nextCard, prevCard } from './fillCard.js';
 
-sayHello();
+const prevButton = document.getElementById('previous-card');
+const nextButton = document.getElementById('next-card');
+
+nextButton.addEventListener('click', nextCard);
+prevButton.addEventListener('click', prevCard);
